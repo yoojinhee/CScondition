@@ -77,6 +77,29 @@ namespace CScondition
             {
                 Console.WriteLine("인사 똑바로 해^^");
             }
+            ConsoleKeyInfo info = Console.ReadKey();
+            switch (info.Key)
+            {
+                case ConsoleKey.UpArrow:
+                    Console.WriteLine("위로 이동");break;
+                case ConsoleKey.DownArrow:
+                    Console.WriteLine("아래로 이동"); break;
+                case ConsoleKey.LeftArrow:
+                    Console.WriteLine("왼쪽으로 이동"); break;
+                case ConsoleKey.RightArrow:
+                    Console.WriteLine("오른쪽으로 이동"); break;
+                default:Console.WriteLine("다른 키를 누르셨습니다");break;
+            }
+            switch (info.KeyChar)
+            {
+                /*case (char)38:
+                    Console.WriteLine("위로 이동");break;*/
+                case '가':
+                    Console.WriteLine("가 입력하셨습니다");break;
+                default:
+                    Console.WriteLine("다른 키를 누르셨습니다"); break;
+
+            }
         }
     }
 }

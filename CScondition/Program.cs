@@ -64,6 +64,18 @@ namespace CScondition
                     Console.WriteLine("여름"); break;
                 case 9:case 10: case 11:
                     Console.WriteLine("봄"); break;
+                default:
+                    Console.WriteLine("당신이 사는곳은 혹시 행성?!");break;
+            }
+            Console.Write("입력");
+            String line = Console.ReadLine();
+            if(line.Contains("안녕"))
+            {
+                Console.WriteLine("안녕하세요");
+            }
+            else
+            {
+                Console.WriteLine("인사 똑바로 해^^");
             }
         }
     }
